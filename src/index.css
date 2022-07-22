@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: ; */
+}
+
+.heading-text-manipulations{
+  text-align: center;
+  font-size: xx-large;
+}
+
+.responsive-buttons-div-grid{
+  text-align: center;
+}
+
+@media(max-width:800px){
+  .responsive-buttons-div-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    place-items: center center;
+  }
+
+  .btn-primary{
+    font-size: small;
+  }
+
+  .heading-text-manipulations{
+    text-align: center;
+    font-size: x-large;
+  }
+}

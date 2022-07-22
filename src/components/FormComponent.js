@@ -9,7 +9,7 @@ export default function FormComponent(props) {
   
   // fontStyle() --->
   const fontStyle = {
-    fontStyle:"italic"
+    fontStyle:"normal"
   }
 
   // lowerCase() --->
@@ -88,16 +88,18 @@ export default function FormComponent(props) {
     <div>
       <br />
       <div className='container my-2'>
-        <h3 style={fontStyle}>Type the text in the Text-Box below</h3>
+        <h3 className='heading-text-manipulations' style={fontStyle}>Type the text in the Text-Box below</h3>
         <div className="mb-3 my-2">
           <textarea className="form-control" onChange={changeText} value={text} id="myForm" rows="8"></textarea>
         </div>
-        <button className='btn btn-primary my-2' onClick={textToUppercase} type='submit'>Convert to Uppercase</button>
-        <button className='btn btn-primary mx-2 my-2' onClick={textToLowercase} type='submit'>Convert to Lowercase</button>
-        <button className='btn btn-primary mx-1 my-2' onClick={removeSpaces} type='submit'>Remove Extra Spaces</button>
-        <button className='btn btn-primary mx-1 my-2' onClick={clearText} type='submit'>Clear Text</button>
-        <button className='btn btn-primary mx-1 my-2' onClick={capitalizeCase} type='submit'>Capitalise</button>
-        <button className='btn btn-primary mx-1 my-2' onClick={darkMode} type='submit'>{bg.newText}</button>
+        <div className='responsive-buttons-div-grid'>
+          <button className='btn btn-primary my-2' onClick={textToUppercase} type='submit'>Convert to Uppercase</button>
+          <button className='btn btn-primary mx-2 my-2' onClick={textToLowercase} type='submit'>Convert to Lowercase</button>
+          <button className='btn btn-primary mx-1 my-2' onClick={removeSpaces} type='submit'>Remove Extra Spaces</button>
+          <button className='btn btn-primary mx-1 my-2' onClick={clearText} type='submit'>Clear Text</button>
+          <button className='btn btn-primary mx-1 my-2' onClick={capitalizeCase} type='submit'>Capitalise</button>
+          <button className='btn btn-primary mx-1 my-2' onClick={darkMode} type='submit'>{bg.newText}</button>
+        </div>
       </div>
       <br />
       <hr />

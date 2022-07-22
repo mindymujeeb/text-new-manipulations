@@ -7,7 +7,7 @@ class navbar extends React.Component{
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">Text Manipulate</a>
+            <h5 className="navbar-brand">Text Manipulate</h5>
           </div>
         </nav>
       </div>
